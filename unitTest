@@ -1,0 +1,17 @@
+package testUnit;
+
+public class testUnit {
+	public static int MaxAddArr(int Arr[]) {
+		int num=0;
+		int max=0;
+		for(int i=0;i<Arr.length;i++) {
+			num+=Arr[i];
+			if(num<0)
+				num=0;
+			if(max<num)
+				max=num;
+		}
+		return max;
+	}
+
+}
